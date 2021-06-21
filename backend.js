@@ -115,36 +115,36 @@ class Industry{
     this.wwt_slu_comp_seqst_rate                    = 0.25; //kgCO2eq/kgSludge
 
     //sludge incineration
-    this.wwt_mass_slu_inc   = 0;
-    this.wwt_temp_inc       = 1023;
-    this.wwt_slu_inc_N_cont = 0;
-    this.wwt_slu_inc_SNCR   = 0;
+    this.wwt_mass_slu_inc   = 0;    //kg of sludge incinerated
+    this.wwt_temp_inc       = 1023; //K | temperature incineration
+    this.wwt_slu_inc_N_cont = 0;    //% of N
+    this.wwt_slu_inc_SNCR   = 0;    //boolean
 
     //sludge LA
-    this.wwt_mass_slu_app          = 0;
+    this.wwt_mass_slu_app          = 0; //kg of sludge sent to LA
     this.wwt_slu_la_solids_content = 0; //%
     this.wwt_slu_la_TVS            = 0; //%
     this.wwt_slu_la_N_cont         = 0; //%
     this.wwt_slu_la_EF             = 0; //gN2O-N/gN
 
     //sludge LF
-    this.wwt_mass_slu_land      = 0;
-    this.wwt_slu_lf_TVS         = 0;
-    this.wwt_slu_lf_uncertainty = 0.9; //adimensional
-    this.wwt_slu_lf_CH4_in_gas  = 50; //%
-    this.wwt_slu_lf_DOCf        = 80; //%
+    this.wwt_mass_slu_land      = 0;    //kg of sludge sent to LF
+    this.wwt_slu_lf_TVS         = 0;    //%
+    this.wwt_slu_lf_uncertainty = 0.9;  //adimensional
+    this.wwt_slu_lf_CH4_in_gas  = 50;   //%
+    this.wwt_slu_lf_DOCf        = 80;   //%
     this.wwt_slu_lf_decomp_3yr  = 69.9; //%
-    this.wwt_slu_lf_MCF         = 1;
-    this.wwt_slu_lf_N_cont      = 0;
+    this.wwt_slu_lf_MCF         = 1;    //ratio
+    this.wwt_slu_lf_N_cont      = 0;    //% N content
     this.wwt_slu_lf_low_CN_EF   = 0.015; //kgN2O-N/kgN
 
     //sludge SP
-    this.wwt_mass_slu_stock = 0;
-    this.wwt_slu_sp_lifespan = 0;
+    this.wwt_mass_slu_stock = 0;  //kg of sludge stockpiled
+    this.wwt_slu_sp_lifespan = 0; //years
 
     //sludge truck transport
-    this.wwt_trck_typ = 0;
-    this.wwt_vol_tslu = 0;
+    this.wwt_trck_typ = 0; //Option | fuel type
+    this.wwt_vol_tslu = 0; //L | volume of fuel
   }
 
   /*
